@@ -1,0 +1,1643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhay Khandelwal | QA Engineer Portfolio - POS, Mobile &amp; API Testing</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Abhay Khandelwal, a QA Engineer with 3+ years experience testing POS, mobile (Android/iOS), and web applications. Specializing in manual, functional, regression, API testing, and Jira defect tracking.">
+  <meta name="keywords" content="Abhay Khandelwal, QA Engineer, Quality Assurance, Manual Testing, Mobile Testing, iOS Testing, Android Testing, POS Testing, API Testing, Postman, Jira, Regression Testing, Test Cases, SDLC, STLC, Defect Lifecycle">
+  <meta name="author" content="Abhay Khandelwal">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0891b2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0e17" media="(prefers-color-scheme: dark)">
+
+  <!-- Open Graph / Facebook / LinkedIn Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abhaykhandelwal.dev/">
+  <meta property="og:title" content="Abhay Khandelwal | QA Engineer Portfolio">
+  <meta property="og:description" content="3+ years testing POS, mobile (Android/iOS), and web applications. Delivering zero-defect releases with precision.">
+  <meta property="og:site_name" content="Abhay Khandelwal Portfolio">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abhay Khandelwal | QA Engineer Portfolio">
+  <meta name="twitter:description" content="QA Engineer with 3+ years experience testing POS, mobile, and web applications. Delivering bug-free releases.">
+
+  <!-- Inline SVG Favicon (Instant, No External Request) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230891b2'/><path d='M28 52 L42 66 L72 34' stroke='%23ffffff' stroke-width='10' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+
+  <!-- Early Theme Initialization to prevent Flash of Unstyled Theme (FOUC) -->
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('portfolio-theme');
+        var systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', initialTheme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+
+  <!-- Google Fonts: Inter with font-display: swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- NoScript Fallback for Scroll Reveal Elements -->
+  <noscript>
+    <style>
+      .reveal-on-scroll,
+      .reveal-card {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Sticky Navbar -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand" aria-label="Abhay Khandelwal QA Portfolio Homepage">
+        <span class="brand-code">&lt;</span>Abhay<span class="brand-accent">.QA</span><span class="brand-code">/&gt;</span>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-wrapper" aria-label="Main Navigation">
+        <ul class="nav-list" id="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active" data-nav-link>Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" data-nav-link>About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" data-nav-link>Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link" data-nav-link>Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link" data-nav-link>Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#qa-work" class="nav-link" data-nav-link>QA Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link" data-nav-link>Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" data-nav-link>Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls: Theme Switcher & Mobile Menu Trigger -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark and Light mode" type="button">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="theme-icon icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="theme-icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <button id="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-list" type="button">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Sections -->
+  <main id="main-content">
+    <!-- Home / Hero Section -->
+    <section id="home" class="section section-hero" aria-label="Home section" data-section>
+      <div class="section-container">
+        <div class="hero-wrapper">
+          <!-- Left Column: Content -->
+          <div class="hero-content">
+            <div class="hero-badge animate-fade-in" style="--delay: 100ms;">
+              <span class="status-dot"></span> Available for QA &amp; SDET Opportunities
+            </div>
+            
+            <h1 class="hero-title animate-fade-in" style="--delay: 200ms;">
+              Hi, I'm <span class="hero-name">Abhay Khandelwal</span>
+            </h1>
+
+            <div class="hero-role-wrapper animate-fade-in" style="--delay: 300ms;">
+              <span class="hero-role-static">QA Engineer &amp; Specialist in</span>
+              <span class="hero-role-dynamic">
+                <span class="hero-role-typed" id="typed-text">Manual Testing</span>
+                <span class="typed-cursor" aria-hidden="true">|</span>
+              </span>
+            </div>
+
+            <p class="hero-tagline animate-fade-in" style="--delay: 400ms;">
+              3+ years testing POS, mobile (Android/iOS) and web applications, delivering bugs-free releases.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="hero-actions animate-fade-in" style="--delay: 500ms;">
+              <a href="resume.pdf" class="btn btn-primary" download target="_blank" rel="noopener noreferrer" aria-label="Download Abhay Khandelwal's QA Resume PDF">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" x2="12" y1="15" y2="3"/>
+                </svg>
+                <span>Download Resume</span>
+              </a>
+              <a href="#contact" class="btn btn-secondary" aria-label="Navigate to Contact section to send a message">
+                <span>Contact Me</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Stats Cards Grid -->
+            <div class="hero-stats-grid animate-fade-in" style="--delay: 600ms;">
+              <div class="stat-card">
+                <div class="stat-value">3+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value">500–700</div>
+                <div class="stat-label">Test Cases / Release</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value">40–50</div>
+                <div class="stat-label">Defects Logged / Month</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Profile Image Placeholder -->
+          <div class="hero-media animate-fade-in" style="--delay: 350ms;">
+            <div class="profile-frame">
+              <div class="profile-glow"></div>
+              <div class="profile-avatar-container">
+                <!-- Replace with <img src="profile.jpg" alt="Abhay Khandelwal - QA Engineer" class="profile-img"> when image is ready -->
+                <div class="profile-placeholder" aria-label="Profile photo placeholder">
+                  <span class="profile-initials">AK</span>
+                  <span class="profile-role-tag">QA ENGINEER</span>
+                </div>
+              </div>
+              <div class="profile-badge-floating">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+                <span>Quality Verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-about" aria-label="About section" data-section>
+      <div class="section-container">
+        <div class="about-grid">
+          <!-- Left Column: Bio & Text Content -->
+          <div class="about-text-col reveal-on-scroll">
+            <div class="section-badge">About Me</div>
+            <h2 class="section-heading">
+              Dedicated to ensuring software <span class="text-accent">reliability &amp; flawless UX</span>.
+            </h2>
+            
+            <p class="about-bio">
+              I am a QA Engineer with 3+ years of specialized experience in manual, functional, and regression testing across POS systems, mobile applications (Android/iOS), and web platforms.
+            </p>
+            <p class="about-bio">
+              My expertise centers around rigorous test case design, end-to-end UAT cycles, and systematic defect lifecycle management using Jira. I validate robust backend integrations with Postman API testing and collaborate closely within fast-paced Agile/Scrum environments throughout the complete SDLC/STLC to ensure zero-defect production releases.
+            </p>
+
+            <!-- Quick Details & Location Pill -->
+            <div class="about-meta">
+              <div class="meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span>Location: <strong>Alwar, Rajasthan, India</strong></span>
+              </div>
+              <div class="meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>QA Engineer • 3+ Years Hands-on Experience</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: 4 Highlight Cards -->
+          <div class="about-cards-col">
+            <!-- Card 1 -->
+            <div class="highlight-card reveal-card" style="--card-delay: 0.1s;">
+              <div class="highlight-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect width="18" height="18" x="3" y="3" rx="2"/>
+                  <path d="m9 8 3 3-3 3"/>
+                  <path d="M12 14h3"/>
+                </svg>
+              </div>
+              <div class="highlight-content">
+                <h3 class="highlight-title">Cross-platform Testing</h3>
+                <p class="highlight-desc">Extensive manual &amp; functional testing on iPad, Android, iPhone, and Web for consistent omnichannel experiences.</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="highlight-card reveal-card" style="--card-delay: 0.2s;">
+              <div class="highlight-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m8 2 1.88 1.88"/>
+                  <path d="M14.12 3.88 16 2"/>
+                  <path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/>
+                  <path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/>
+                  <path d="M12 20v-9"/>
+                  <path d="M6.53 9C4.6 8.8 3 7.1 3 5"/>
+                  <path d="M6 13H2"/>
+                  <path d="M3 21c0-2.1 1.7-3.9 3.8-4"/>
+                  <path d="M20.97 5c0 2.1-1.6 3.8-3.5 4"/>
+                  <path d="M22 13h-4"/>
+                  <path d="M17.2 17c2.1.1 3.8 1.9 3.8 4"/>
+                </svg>
+              </div>
+              <div class="highlight-content">
+                <h3 class="highlight-title">Defect Management (Jira)</h3>
+                <p class="highlight-desc">Structured bug reports with detailed reproduction steps, logs, severity categorization, and complete lifecycle tracking.</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="highlight-card reveal-card" style="--card-delay: 0.3s;">
+              <div class="highlight-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>
+                </svg>
+              </div>
+              <div class="highlight-content">
+                <h3 class="highlight-title">API Testing (Postman)</h3>
+                <p class="highlight-desc">End-to-end endpoint verification, payload schema assertions, HTTP response status validations, and boundary testing.</p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="highlight-card reveal-card" style="--card-delay: 0.4s;">
+              <div class="highlight-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div class="highlight-content">
+                <h3 class="highlight-title">Agile &amp; Scrum Teams</h3>
+                <p class="highlight-desc">Active sprint participation, daily standups, backlog refinement, sprint review, and continuous testing integration.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-skills" aria-label="Skills section" data-section>
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header-center reveal-on-scroll">
+          <div class="section-badge">Core Competencies</div>
+          <h2 class="section-heading">Technical &amp; QA Skills</h2>
+          <p class="section-subheading">
+            Comprehensive testing toolset, methodologies, and technical competencies applied across production releases.
+          </p>
+        </div>
+
+        <!-- Skills Categories Grid -->
+        <div class="skills-grid">
+          <!-- Category 1: Testing Types (Featured / Wide) -->
+          <div class="skills-category-card skills-card-featured reveal-card" style="--card-delay: 0.1s;">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m9 11 3 3L22 4"/>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                </svg>
+              </div>
+              <div class="category-info">
+                <h3 class="category-title">Testing Types</h3>
+                <span class="category-count">10 Core Disciplines</span>
+              </div>
+            </div>
+            <div class="chips-container">
+              <span class="skill-chip">Manual Testing</span>
+              <span class="skill-chip">Functional Testing</span>
+              <span class="skill-chip">Regression Testing</span>
+              <span class="skill-chip">Smoke Testing</span>
+              <span class="skill-chip">Sanity Testing</span>
+              <span class="skill-chip">UI Testing</span>
+              <span class="skill-chip">UAT</span>
+              <span class="skill-chip">Cross-browser</span>
+              <span class="skill-chip">Cross-device</span>
+              <span class="skill-chip">Mobile (Android/iOS)</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Tools -->
+          <div class="skills-category-card reveal-card" style="--card-delay: 0.2s;">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </svg>
+              </div>
+              <div class="category-info">
+                <h3 class="category-title">Tools &amp; Platforms</h3>
+                <span class="category-count">Bug Tracking &amp; CI/CD</span>
+              </div>
+            </div>
+            <div class="chips-container">
+              <span class="skill-chip">Jira</span>
+              <span class="skill-chip">Postman</span>
+              <span class="skill-chip">Confluence</span>
+              <span class="skill-chip">Trello</span>
+              <span class="skill-chip">Selenium <small>(Training Exposure)</small></span>
+            </div>
+          </div>
+
+          <!-- Category 3: Database -->
+          <div class="skills-category-card reveal-card" style="--card-delay: 0.3s;">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                  <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/>
+                </svg>
+              </div>
+              <div class="category-info">
+                <h3 class="category-title">Database &amp; Data Validation</h3>
+                <span class="category-count">Backend Verification</span>
+              </div>
+            </div>
+            <div class="chips-container">
+              <span class="skill-chip">SQL</span>
+              <span class="skill-chip">MySQL</span>
+              <span class="skill-chip skill-chip-highlight">Query-based Test Data Validation</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Methodologies -->
+          <div class="skills-category-card reveal-card" style="--card-delay: 0.4s;">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M2 12h5"/>
+                  <path d="M17 12h5"/>
+                  <path d="M12 2v5"/>
+                  <path d="M12 17v5"/>
+                  <circle cx="12" cy="12" r="7"/>
+                </svg>
+              </div>
+              <div class="category-info">
+                <h3 class="category-title">Methodologies &amp; Processes</h3>
+                <span class="category-count">SDLC / STLC Frameworks</span>
+              </div>
+            </div>
+            <div class="chips-container">
+              <span class="skill-chip">Agile</span>
+              <span class="skill-chip">Scrum</span>
+              <span class="skill-chip">SDLC</span>
+              <span class="skill-chip">STLC</span>
+              <span class="skill-chip">Defect Life Cycle</span>
+            </div>
+          </div>
+
+          <!-- Category 5: Other Competencies -->
+          <div class="skills-category-card reveal-card" style="--card-delay: 0.5s;">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </div>
+              <div class="category-info">
+                <h3 class="category-title">Core Testing Competencies</h3>
+                <span class="category-count">Test Engineering</span>
+              </div>
+            </div>
+            <div class="chips-container">
+              <span class="skill-chip">API Testing</span>
+              <span class="skill-chip">Test Case &amp; Scenario Design</span>
+              <span class="skill-chip">Verification &amp; Validation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-experience" aria-label="Experience section" data-section>
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header-center reveal-on-scroll">
+          <div class="section-badge">Career Journey</div>
+          <h2 class="section-heading">Work Experience</h2>
+          <p class="section-subheading">
+            Track record of driving quality assurance, managing defect lifecycles, and ensuring high-standard production rollouts.
+          </p>
+        </div>
+
+        <!-- Vertical Timeline -->
+        <div class="timeline-container">
+          <div class="timeline-track" aria-hidden="true"></div>
+
+          <!-- Timeline Item 1 (Current Role) -->
+          <div class="timeline-item reveal-card" style="--card-delay: 0.1s;">
+            <!-- Timeline Marker / Node -->
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot active-dot"></span>
+            </div>
+
+            <!-- Timeline Content Card -->
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div class="timeline-role-info">
+                  <div class="role-badge-group">
+                    <h3 class="timeline-role">QA Engineer</h3>
+                    <span class="current-badge">
+                      <span class="current-pulse"></span> Current
+                    </span>
+                  </div>
+                  <h4 class="timeline-company">Radicalrack Technologies</h4>
+                </div>
+                <div class="timeline-duration">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                    <line x1="16" x2="16" y1="2" y2="6"/>
+                    <line x1="8" x2="8" y1="2" y2="6"/>
+                    <line x1="3" x2="21" y1="10" y2="10"/>
+                  </svg>
+                  <span>Jan 2024 – Present</span>
+                </div>
+              </div>
+
+              <!-- Responsibilities / Accomplishments -->
+              <ul class="timeline-bullets">
+                <li>
+                  <span class="bullet-icon">&#10003;</span>
+                  <span>Executed <strong>500–700 test cases per release cycle</strong> across POS, KIOSK, KDS, Android, iPad, iPhone, and Web apps.</span>
+                </li>
+                <li>
+                  <span class="bullet-icon">&#10003;</span>
+                  <span>Logged and tracked <strong>40–50 defects/month in Jira</strong>, coordinating with developers to improve resolution turnaround time.</span>
+                </li>
+                <li>
+                  <span class="bullet-icon">&#10003;</span>
+                  <span>Created and executed test cases covering <strong>Functional, Regression, Smoke, Sanity, UI, and UAT</strong> stages.</span>
+                </li>
+                <li>
+                  <span class="bullet-icon">&#10003;</span>
+                  <span>Caught issues early in the test lifecycle, significantly reducing production defects with very few critical bugs escaping post-UAT.</span>
+                </li>
+                <li>
+                  <span class="bullet-icon">&#10003;</span>
+                  <span>Conducted cross-platform testing in fast-paced teams building with <strong>React JS, React Native, and Flutter</strong>.</span>
+                </li>
+              </ul>
+
+              <!-- Tech & Tools Tags -->
+              <div class="timeline-tags">
+                <span class="tech-tag">POS Systems</span>
+                <span class="tech-tag">KIOSK &amp; KDS</span>
+                <span class="tech-tag">Android</span>
+                <span class="tech-tag">iOS / iPad</span>
+                <span class="tech-tag">Jira</span>
+                <span class="tech-tag">Functional &amp; Regression</span>
+                <span class="tech-tag">UAT</span>
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Flutter</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item reveal-card" style="--card-delay: 0.25s;">
+            <!-- Timeline Marker / Node -->
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+
+            <!-- Timeline Content Card -->
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div class="timeline-role-info">
+                  <h3 class="timeline-role">Associate QA</h3>
+                  <h4 class="timeline-company">Secure Learning Pvt. Ltd.</h4>
+                </div>
+                <div class="timeline-duration">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                    <line x1="16" x2="16" y1="2" y2="6"/>
+                    <line x1="8" x2="8" y1="2" y2="6"/>
+                    <line x1="3" x2="21" y1="10" y2="10"/>
+                  </svg>
+                  <span>Nov 2021 – May 2022</span>
+                </div>
+              </div>
+
+              <!-- Responsibilities / Accomplishments -->
+              <ul class="timeline-bullets">
+                <li>
+                  <span class="bullet-icon">&#10003;</span>
+                  <span>Prepared comprehensive test cases from functional specifications (FRS/SRS).</span>
+                </li>
+                <li>
+                  <span class="bullet-icon">&#10003;</span>
+                  <span>Reported and documented defects with detailed reproduction steps, logs, and screenshots.</span>
+                </li>
+                <li>
+                  <span class="bullet-icon">&#10003;</span>
+                  <span>Executed Functional and Regression testing to thoroughly verify bug fixes prior to release.</span>
+                </li>
+                <li>
+                  <span class="bullet-icon">&#10003;</span>
+                  <span>Coordinated with developers to meet sprint commitments and ensure on-time product releases.</span>
+                </li>
+              </ul>
+
+              <!-- Tech & Tools Tags -->
+              <div class="timeline-tags">
+                <span class="tech-tag">Manual Testing</span>
+                <span class="tech-tag">Test Case Design</span>
+                <span class="tech-tag">Defect Reporting</span>
+                <span class="tech-tag">Regression Testing</span>
+                <span class="tech-tag">SDLC &amp; STLC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-projects" aria-label="Projects section" data-section>
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header-center reveal-on-scroll">
+          <div class="section-badge">Featured Case Studies</div>
+          <h2 class="section-heading">Featured Projects &amp; QA Work</h2>
+          <p class="section-subheading">
+            Practical QA engineering across mission-critical POS ecosystems, service aggregators, on-demand dispatch systems, and real-time healthcare platforms.
+          </p>
+        </div>
+
+        <!-- 4 Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project Card 1: Fast-Food Restaurant Chain -->
+          <article class="project-card reveal-card" style="--card-delay: 0.1s;">
+            <div class="project-card-header">
+              <span class="project-domain-badge">POS &amp; Retail Tech</span>
+              <div class="project-icon-box" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+                  <path d="M3 6h18"/>
+                  <path d="M16 10a4 4 0 0 1-8 0"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Fast-Food Restaurant Chain (POS / KDS System)</h3>
+              <p class="project-desc">
+                High-volume point-of-sale and kitchen display system ensuring accurate order orchestration, split billing, modifier routing, and zero order loss.
+              </p>
+
+              <div class="project-highlights">
+                <span class="highlight-pill">POS-to-KDS Sync</span>
+                <span class="highlight-pill">Functional &amp; Regression</span>
+                <span class="highlight-pill">Offline Sync</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button type="button" class="btn-case-study" data-project-id="pos-kds" aria-haspopup="dialog" aria-label="View Mini Case Study for Fast-Food Restaurant Chain POS and KDS System">
+                <span>View Mini Case Study</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project Card 2: Home Service & Task Management -->
+          <article class="project-card reveal-card" style="--card-delay: 0.2s;">
+            <div class="project-card-header">
+              <span class="project-domain-badge">On-Demand Services</span>
+              <div class="project-icon-box" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Home Service Request &amp; Task Management System</h3>
+              <p class="project-desc">
+                Multi-tier web and mobile platform facilitating customer service bookings, automated task assignment, and live technician workflow tracking.
+              </p>
+
+              <div class="project-highlights">
+                <span class="highlight-pill">Task Assignment</span>
+                <span class="highlight-pill">UAT &amp; Regression</span>
+                <span class="highlight-pill">Web &amp; Mobile</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button type="button" class="btn-case-study" data-project-id="home-services" aria-haspopup="dialog" aria-label="View Mini Case Study for Home Service Request and Task Management System">
+                <span>View Mini Case Study</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project Card 3: Taxi Service, Australia -->
+          <article class="project-card reveal-card" style="--card-delay: 0.3s;">
+            <div class="project-card-header">
+              <span class="project-domain-badge">Mobility &amp; Transportation</span>
+              <div class="project-icon-box" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C2.1 10.9 2 11.2 2 11.5V16c0 .6.4 1 1 1h2"/>
+                  <circle cx="7" cy="17" r="2"/>
+                  <path d="M9 17h6"/>
+                  <circle cx="17" cy="17" r="2"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Taxi Service, Australia (Rider &amp; Driver App)</h3>
+              <p class="project-desc">
+                Cross-device mobile ride-hailing application testing real-time booking flows, driver vehicle dispatch, fare calculations, and GPS synchronizations.
+              </p>
+
+              <div class="project-highlights">
+                <span class="highlight-pill">Dispatch Workflows</span>
+                <span class="highlight-pill">Cross-Device QA</span>
+                <span class="highlight-pill">GPS Simulation</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button type="button" class="btn-case-study" data-project-id="taxi-australia" aria-haspopup="dialog" aria-label="View Mini Case Study for Taxi Service, Australia App">
+                <span>View Mini Case Study</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project Card 4: Healthcare Monitoring App -->
+          <article class="project-card reveal-card" style="--card-delay: 0.4s;">
+            <div class="project-card-header">
+              <span class="project-domain-badge">Healthcare &amp; IoT</span>
+              <div class="project-icon-box" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                  <path d="M12 5v14"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Healthcare Monitoring App (React Native)</h3>
+              <p class="project-desc">
+                Continuous biometric health tracking via Bluetooth Low Energy devices, real-time diagnostic charts (Skia &amp; Victory Native), and role-based access control.
+              </p>
+
+              <div class="project-highlights">
+                <span class="highlight-pill">BLE Connectivity</span>
+                <span class="highlight-pill">Live Charts 60fps</span>
+                <span class="highlight-pill">RBAC Security</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button type="button" class="btn-case-study" data-project-id="healthcare-app" aria-haspopup="dialog" aria-label="View Mini Case Study for Healthcare Monitoring React Native App">
+                <span>View Mini Case Study</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Case Study Modal Dialog -->
+      <div id="case-study-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+        <div class="modal-backdrop" data-close-modal></div>
+        <div class="modal-container" role="document">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <div class="modal-title-group">
+              <span class="modal-badge" id="modal-domain">Domain</span>
+              <h3 class="modal-title" id="modal-title">Project Case Study</h3>
+              <p class="modal-subtitle" id="modal-subtitle">Project Subtitle</p>
+            </div>
+            <button type="button" class="modal-close-btn" data-close-modal aria-label="Close case study modal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Modal Scrollable Body -->
+          <div class="modal-body" id="modal-content-body">
+            <!-- 5 Case study sections will be populated dynamically -->
+          </div>
+
+          <!-- Modal Footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary modal-action-btn" data-close-modal>
+              <span>Close Case Study</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QA Work Section -->
+    <section id="qa-work" class="section section-qa-work" aria-label="QA Work section" data-section>
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header-center reveal-on-scroll">
+          <div class="section-badge">Testing Process &amp; Artifacts</div>
+          <h2 class="section-heading">QA Work &amp; Deliverables</h2>
+          <p class="section-subheading">
+            Interactive samples of test documentation, structured bug reporting, defect governance workflows, and API validation.
+          </p>
+        </div>
+
+        <!-- QA Tabs Navigation -->
+        <div class="qa-tabs-wrapper reveal-on-scroll">
+          <div class="qa-tabs-list" role="tablist" aria-label="QA Artifacts Tabs">
+            <button type="button" class="qa-tab-btn active" role="tab" id="tab-test-cases" aria-selected="true" aria-controls="panel-test-cases" data-qa-tab="test-cases">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+              <span>Sample Test Cases</span>
+            </button>
+
+            <button type="button" class="qa-tab-btn" role="tab" id="tab-bug-report" aria-selected="false" aria-controls="panel-bug-report" data-qa-tab="bug-report">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m8 2 1.88 1.88"/>
+                <path d="M14.12 3.88 16 2"/>
+                <path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/>
+                <path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/>
+                <path d="M12 20v-9"/>
+                <path d="M6.53 9C4.6 8.8 3 7.1 3 5"/>
+                <path d="M6 13H2"/>
+                <path d="M3 21c0-2.1 1.7-3.9 3.8-4"/>
+                <path d="M20.97 5c0 2.1-1.6 3.8-3.5 4"/>
+                <path d="M22 13h-4"/>
+                <path d="M17.2 17c2.1.1 3.8 1.9 3.8 4"/>
+              </svg>
+              <span>Sample Bug Report (Jira)</span>
+            </button>
+
+            <button type="button" class="qa-tab-btn" role="tab" id="tab-defect-lifecycle" aria-selected="false" aria-controls="panel-defect-lifecycle" data-qa-tab="defect-lifecycle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <span>Defect Life Cycle</span>
+            </button>
+
+            <button type="button" class="qa-tab-btn" role="tab" id="tab-api-testing" aria-selected="false" aria-controls="panel-api-testing" data-qa-tab="api-testing">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>
+              </svg>
+              <span>API Testing (Postman Mock)</span>
+            </button>
+          </div>
+
+          <!-- TAB 1: Sample Test Cases Table -->
+          <div class="qa-tab-panel active" id="panel-test-cases" role="tabpanel" aria-labelledby="tab-test-cases">
+            <div class="table-container-card">
+              <div class="table-card-header">
+                <div>
+                  <h3 class="table-card-title">Test Execution Matrix</h3>
+                  <p class="table-card-desc">Sample test scenarios covering user authentication and POS checkout workflows.</p>
+                </div>
+                <div class="table-summary-badges">
+                  <span class="badge-metric badge-pass">5 Passed</span>
+                  <span class="badge-metric badge-fail">1 Failed</span>
+                </div>
+              </div>
+
+              <div class="table-responsive-wrapper">
+                <table class="qa-table">
+                  <thead>
+                    <tr>
+                      <th scope="col" style="width: 100px;">TC ID</th>
+                      <th scope="col" style="width: 110px;">Module</th>
+                      <th scope="col" style="min-width: 180px;">Scenario</th>
+                      <th scope="col" style="min-width: 220px;">Steps to Execute</th>
+                      <th scope="col" style="min-width: 220px;">Expected Result</th>
+                      <th scope="col" style="width: 110px;">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="tc-id-badge">TC-LGN-01</span></td>
+                      <td><span class="module-tag">Authentication</span></td>
+                      <td><strong>Valid user login</strong></td>
+                      <td class="text-sm">1. Enter valid email<br>2. Enter correct password<br>3. Tap "Sign In"</td>
+                      <td class="text-sm">Dashboard loads with active user session, token generated, no errors.</td>
+                      <td><span class="status-pill status-pass">Pass</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="tc-id-badge">TC-LGN-02</span></td>
+                      <td><span class="module-tag">Authentication</span></td>
+                      <td><strong>Invalid password entry</strong></td>
+                      <td class="text-sm">1. Enter valid email<br>2. Enter incorrect password<br>3. Submit form</td>
+                      <td class="text-sm">Inline error "Invalid credentials" displayed; password field reset.</td>
+                      <td><span class="status-pill status-pass">Pass</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="tc-id-badge">TC-LGN-03</span></td>
+                      <td><span class="module-tag">Authentication</span></td>
+                      <td><strong>Account lockout policy</strong></td>
+                      <td class="text-sm">1. Enter incorrect password 5 times consecutively<br>2. Attempt 6th login</td>
+                      <td class="text-sm">Account locked for 15 minutes; lockout banner and recovery email sent.</td>
+                      <td><span class="status-pill status-pass">Pass</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="tc-id-badge">TC-POS-01</span></td>
+                      <td><span class="module-tag">POS Order Flow</span></td>
+                      <td><strong>Item customization &amp; modifiers</strong></td>
+                      <td class="text-sm">1. Select "Classic Burger"<br>2. Add modifier "+Extra Cheese"<br>3. Tap "Add to Cart"</td>
+                      <td class="text-sm">Cart calculates item base price + modifier ($8.50 + $1.00 = $9.50) correctly.</td>
+                      <td><span class="status-pill status-pass">Pass</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="tc-id-badge">TC-POS-02</span></td>
+                      <td><span class="module-tag">POS Order Flow</span></td>
+                      <td><strong>Multi-tender split payment</strong></td>
+                      <td class="text-sm">1. Open ticket ($40 total)<br>2. Select Split Payment<br>3. Pay $20 Cash<br>4. Pay $20 Card</td>
+                      <td class="text-sm">Both transactions settle; remaining balance becomes $0.00; itemized receipt prints.</td>
+                      <td><span class="status-pill status-pass">Pass</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="tc-id-badge">TC-POS-03</span></td>
+                      <td><span class="module-tag">POS Order Flow</span></td>
+                      <td><strong>Offline transaction synchronization</strong></td>
+                      <td class="text-sm">1. Disable network Wi-Fi<br>2. Place &amp; complete cash order<br>3. Re-enable network</td>
+                      <td class="text-sm">Ticket stored in offline queue should sync to cloud and KDS automatically within 30s.</td>
+                      <td><span class="status-pill status-fail">Fail</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 2: Sample Jira Bug Report -->
+          <div class="qa-tab-panel" id="panel-bug-report" role="tabpanel" aria-labelledby="tab-bug-report">
+            <div class="jira-card">
+              <!-- Jira Header -->
+              <div class="jira-header">
+                <div class="jira-meta-left">
+                  <span class="jira-issue-type">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    Bug
+                  </span>
+                  <span class="jira-issue-key">POS-1042</span>
+                </div>
+                <div class="jira-status-badge">
+                  <span class="jira-status-dot"></span> In Triage / Open
+                </div>
+              </div>
+
+              <!-- Jira Title -->
+              <h3 class="jira-title">
+                [POS-KDS] Offline order ticket fails to sync to Kitchen Display System (KDS) after network reconnection
+              </h3>
+
+              <!-- Jira Attributes Grid -->
+              <div class="jira-fields-grid">
+                <div class="jira-field-item">
+                  <span class="jira-label">Severity</span>
+                  <span class="jira-value severity-critical">Critical (Sev-1)</span>
+                </div>
+                <div class="jira-field-item">
+                  <span class="jira-label">Priority</span>
+                  <span class="jira-value priority-high">P1 - High</span>
+                </div>
+                <div class="jira-field-item">
+                  <span class="jira-label">Component</span>
+                  <span class="jira-value">Order Management / Sync Engine</span>
+                </div>
+                <div class="jira-field-item">
+                  <span class="jira-label">Environment</span>
+                  <span class="jira-value">Staging v2.4.1 | iPadOS 17.4 (iPad Air 5th Gen)</span>
+                </div>
+                <div class="jira-field-item">
+                  <span class="jira-label">Reporter</span>
+                  <span class="jira-value">Abhay Khandelwal (QA Engineer)</span>
+                </div>
+                <div class="jira-field-item">
+                  <span class="jira-label">Assignee</span>
+                  <span class="jira-value">Lead Backend Engineer (Sync Team)</span>
+                </div>
+              </div>
+
+              <!-- Jira Body Details -->
+              <div class="jira-content-sections">
+                <div class="jira-section-block">
+                  <h4 class="jira-section-title">Steps to Reproduce:</h4>
+                  <ol class="jira-steps-list">
+                    <li>Log in to the Cashier POS terminal with an open register shift.</li>
+                    <li>Add 2 combo meals with modifiers to cart ($24.50 total).</li>
+                    <li>Disconnect the terminal Wi-Fi connection in system settings to simulate an unexpected offline state.</li>
+                    <li>Proceed to checkout and tender full amount via Cash.</li>
+                    <li>Confirm that order #ORD-4491 is queued locally with "Offline Pending Sync" badge.</li>
+                    <li>Re-enable Wi-Fi connectivity and wait 60 seconds.</li>
+                  </ol>
+                </div>
+
+                <div class="jira-compare-grid">
+                  <div class="jira-compare-box expected-box">
+                    <span class="compare-label">Expected Result</span>
+                    <p>POS detects restored connection, flushes offline queue to cloud server, and routes order #ORD-4491 to the Kitchen Display System immediately.</p>
+                  </div>
+                  <div class="jira-compare-box actual-box">
+                    <span class="compare-label">Actual Result</span>
+                    <p>POS shows "Sync Successful" banner locally, but KDS screen never receives order #ORD-4491. Ticket dropped silently from queue with error <code>ERR_SOCKET_TIMEOUT_RETRY_ABORT</code>.</p>
+                  </div>
+                </div>
+
+                <div class="jira-attachments-box">
+                  <span class="jira-label">Evidence &amp; Artifacts:</span>
+                  <div class="attachment-tags">
+                    <span class="attachment-chip">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+                      kds_dropped_ticket_log.txt (14.2 KB)
+                    </span>
+                    <span class="attachment-chip">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                      pos_offline_screenshot.png (1.1 MB)
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 3: Defect Life Cycle Flow Diagram -->
+          <div class="qa-tab-panel" id="panel-defect-lifecycle" role="tabpanel" aria-labelledby="tab-defect-lifecycle">
+            <div class="lifecycle-card">
+              <div class="lifecycle-header">
+                <h3 class="lifecycle-title">Standard Defect Life Cycle (STLC Workflow)</h3>
+                <p class="lifecycle-desc">End-to-end defect management governance followed across Agile sprint test cycles.</p>
+              </div>
+
+              <!-- Visual Flow Container -->
+              <div class="flow-diagram-container">
+                <!-- Main Happy Path Flow -->
+                <div class="flow-main-path">
+                  <div class="flow-node node-new">
+                    <div class="node-number">01</div>
+                    <div class="node-title">New</div>
+                    <div class="node-desc">Logged by QA with steps &amp; logs</div>
+                  </div>
+
+                  <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+
+                  <div class="flow-node node-assigned">
+                    <div class="node-number">02</div>
+                    <div class="node-title">Assigned</div>
+                    <div class="node-desc">Triaged &amp; allocated to Dev</div>
+                  </div>
+
+                  <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+
+                  <div class="flow-node node-open">
+                    <div class="node-number">03</div>
+                    <div class="node-title">Open</div>
+                    <div class="node-desc">Root-cause investigation</div>
+                  </div>
+
+                  <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+
+                  <div class="flow-node node-fixed">
+                    <div class="node-number">04</div>
+                    <div class="node-title">Fixed</div>
+                    <div class="node-desc">Code fix committed to QA build</div>
+                  </div>
+
+                  <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+
+                  <div class="flow-node node-retest">
+                    <div class="node-number">05</div>
+                    <div class="node-title">Retest</div>
+                    <div class="node-desc">QA validates fix in staging</div>
+                  </div>
+
+                  <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+
+                  <div class="flow-node node-verified">
+                    <div class="node-number">06</div>
+                    <div class="node-title">Verified</div>
+                    <div class="node-desc">No regression; test passed</div>
+                  </div>
+
+                  <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+
+                  <div class="flow-node node-closed">
+                    <div class="node-number">07</div>
+                    <div class="node-title">Closed</div>
+                    <div class="node-desc">Approved for release</div>
+                  </div>
+                </div>
+
+                <!-- Secondary Alternative Branches -->
+                <div class="flow-branches">
+                  <div class="branch-card branch-reopen">
+                    <div class="branch-badge">Condition: Bug Still Persists</div>
+                    <div class="branch-title">&#x21BA; Reopen</div>
+                    <p class="branch-desc">If defect fails retest or triggers regression, it transitions from <strong>Retest &rarr; Reopened &rarr; Open</strong> with updated logs.</p>
+                  </div>
+
+                  <div class="branch-card branch-rejected">
+                    <div class="branch-badge">Condition: Not A Bug / Out of Scope</div>
+                    <div class="branch-title">&#x2715; Rejected / Deferred</div>
+                    <p class="branch-desc">If behavior matches product specs or duplicate exists, it transitions from <strong>Open &rarr; Rejected</strong> or postponed to future sprint.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 4: API Testing (Postman-style Mock) -->
+          <div class="qa-tab-panel" id="panel-api-testing" role="tabpanel" aria-labelledby="tab-api-testing">
+            <div class="postman-mock-card">
+              <!-- Postman URL bar -->
+              <div class="postman-top-bar">
+                <div class="postman-url-group">
+                  <span class="http-badge badge-get">GET</span>
+                  <input type="text" class="postman-input" value="https://api.staging.example.com/v1/users/auth/profile" readonly aria-label="API endpoint URL">
+                </div>
+                <button type="button" class="postman-send-btn" aria-label="Simulate API Send Request">
+                  <span>Send</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+              </div>
+
+              <!-- Postman Meta Response Stats -->
+              <div class="postman-stats-bar">
+                <div class="stat-meta-item">
+                  <span class="stat-label">Status:</span>
+                  <span class="status-chip-200">200 OK</span>
+                </div>
+                <div class="stat-meta-item">
+                  <span class="stat-label">Time:</span>
+                  <span class="stat-value">142 ms</span>
+                </div>
+                <div class="stat-meta-item">
+                  <span class="stat-label">Size:</span>
+                  <span class="stat-value">1.28 KB</span>
+                </div>
+              </div>
+
+              <!-- Postman Test Assertions Summary -->
+              <div class="postman-assertions-box">
+                <div class="assertion-header">
+                  <span>Test Results:</span>
+                  <span class="pass-count">3 / 3 Passed</span>
+                </div>
+                <div class="assertion-pills">
+                  <span class="assertion-pill"><span class="tick">&#10003;</span> Status code is 200 OK</span>
+                  <span class="assertion-pill"><span class="tick">&#10003;</span> Response time &lt; 300ms</span>
+                  <span class="assertion-pill"><span class="tick">&#10003;</span> Schema contains user_id &amp; permissions</span>
+                </div>
+              </div>
+
+              <!-- Postman JSON Response Editor -->
+              <div class="postman-body-wrapper">
+                <div class="editor-header">
+                  <span class="editor-lang">Body &bull; JSON</span>
+                  <span class="editor-copy">Sample Mock Response</span>
+                </div>
+                <pre class="json-code"><code>{
+  <span class="json-key">"status"</span>: <span class="json-number">200</span>,
+  <span class="json-key">"message"</span>: <span class="json-string">"User profile retrieved successfully"</span>,
+  <span class="json-key">"data"</span>: {
+    <span class="json-key">"user_id"</span>: <span class="json-string">"usr_998124_qa"</span>,
+    <span class="json-key">"name"</span>: <span class="json-string">"Abhay Khandelwal"</span>,
+    <span class="json-key">"role"</span>: <span class="json-string">"QA_ENGINEER"</span>,
+    <span class="json-key">"email"</span>: <span class="json-string">"abhay.qa@example.com"</span>,
+    <span class="json-key">"active_shift"</span>: {
+      <span class="json-key">"register_id"</span>: <span class="json-string">"REG_TERMINAL_04"</span>,
+      <span class="json-key">"store_id"</span>: <span class="json-string">"STORE_ALWAR_01"</span>,
+      <span class="json-key">"is_online"</span>: <span class="json-boolean">true</span>
+    },
+    <span class="json-key">"permissions"</span>: [
+      <span class="json-string">"pos.order.create"</span>,
+      <span class="json-string">"pos.order.split_payment"</span>,
+      <span class="json-string">"pos.kds.sync"</span>,
+      <span class="json-string">"reports.view"</span>
+    ]
+  },
+  <span class="json-key">"timestamp"</span>: <span class="json-string">"2026-10-04T18:17:00.000Z"</span>
+}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education" class="section section-education" aria-label="Education and Certifications section" data-section>
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header-center reveal-on-scroll">
+          <div class="section-badge">Academic &amp; Credentials</div>
+          <h2 class="section-heading">Education &amp; Certification</h2>
+          <p class="section-subheading">
+            Academic foundation in computer applications complemented by specialized manual and automation quality engineering training.
+          </p>
+        </div>
+
+        <!-- 2 Columns Side-by-Side Grid -->
+        <div class="edu-cert-grid">
+          <!-- Column 1: Education -->
+          <div class="edu-cert-column reveal-card" style="--card-delay: 0.1s;">
+            <div class="column-header">
+              <div class="column-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="column-title">Formal Education</h3>
+                <span class="column-subtitle">University Degrees</span>
+              </div>
+            </div>
+
+            <div class="credential-cards-list">
+              <!-- Degree 1: MCA -->
+              <div class="credential-card">
+                <div class="credential-card-top">
+                  <span class="credential-type">Postgraduate Degree</span>
+                  <span class="credential-period">2019 – 2021</span>
+                </div>
+                <h4 class="credential-title">Master of Computer Application (MCA)</h4>
+                <div class="credential-institute">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <span>Jaipur National University</span>
+                </div>
+                <p class="credential-desc">Specialized study in software engineering, database management systems (DBMS), algorithms, and advanced application architecture.</p>
+              </div>
+
+              <!-- Degree 2: BCA -->
+              <div class="credential-card">
+                <div class="credential-card-top">
+                  <span class="credential-type">Undergraduate Degree</span>
+                  <span class="credential-period">2017 – 2019</span>
+                </div>
+                <h4 class="credential-title">Bachelor's in Computer Application (BCA)</h4>
+                <div class="credential-institute">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <span>Singhania University</span>
+                </div>
+                <p class="credential-desc">Foundation in object-oriented programming, data structures, relational database concepts, software testing fundamentals, and web technologies.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Certification -->
+          <div class="edu-cert-column reveal-card" style="--card-delay: 0.25s;">
+            <div class="column-header">
+              <div class="column-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="8" r="6"/>
+                  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="column-title">Professional Certification</h3>
+                <span class="column-subtitle">Specialized QA Training</span>
+              </div>
+            </div>
+
+            <div class="credential-cards-list">
+              <!-- Certification 1 -->
+              <div class="credential-card cert-featured">
+                <div class="credential-card-top">
+                  <span class="credential-type badge-cert">Certified Program</span>
+                  <span class="credential-period">Jan 2023 – July 2023</span>
+                </div>
+                <h4 class="credential-title">Manual and Automation Testing</h4>
+                <div class="credential-institute">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                  <span>6 Months Intensive Training Course</span>
+                </div>
+                <p class="credential-desc">In-depth hands-on curriculum covering SDLC/STLC methodologies, test case design, black-box testing techniques, defect reporting in Jira, API testing with Postman, and foundational test automation exposure using Core Java and Selenium WebDriver.</p>
+                <div class="cert-topics-pills">
+                  <span class="cert-pill">Manual Testing</span>
+                  <span class="cert-pill">Functional &amp; Regression</span>
+                  <span class="cert-pill">Automation Exposure (Selenium)</span>
+                  <span class="cert-pill">Defect Lifecycle (Jira)</span>
+                  <span class="cert-pill">API Testing (Postman)</span>
+                  <span class="cert-pill">SQL Test Queries</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="section section-contact" aria-label="Contact section" data-section>
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header-center reveal-on-scroll">
+          <div class="section-badge">Get In Touch</div>
+          <h2 class="section-heading">Let's Connect &amp; Collaborate</h2>
+          <p class="section-subheading">
+            Whether you have an open QA Engineer position, need exploratory or regression testing for your product, or want to discuss quality assurance best practices, I'd love to hear from you.
+          </p>
+        </div>
+
+        <!-- 2-Column Contact Grid -->
+        <div class="contact-grid">
+          <!-- Left Column: Contact Cards & Social Info -->
+          <div class="contact-info-col reveal-card" style="--card-delay: 0.1s;">
+            <div class="contact-intro-card">
+              <div class="contact-intro-header">
+                <div class="contact-avatar-badge">
+                  <span class="avatar-initials">AK</span>
+                  <span class="avatar-status-dot" title="Available for opportunities"></span>
+                </div>
+                <div class="contact-intro-meta">
+                  <h3 class="contact-person-name">Abhay Khandelwal</h3>
+                  <p class="contact-person-role">QA Engineer &bull; POS, Mobile &amp; Web</p>
+                </div>
+              </div>
+              <p class="contact-bio-note">
+                Passionate about early defect detection, rock-solid test coverage, and smooth release cycles. Actively open to full-time QA roles, contract QA testing, and technical collaborations.
+              </p>
+            </div>
+
+            <div class="contact-details-list">
+              <!-- Email Card -->
+              <div class="contact-detail-card">
+                <div class="detail-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="20" height="16" x="2" y="4" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                  </svg>
+                </div>
+                <div class="detail-content">
+                  <span class="detail-label">Direct Email</span>
+                  <a href="mailto:abhaayk30@gmail.com" class="detail-value detail-link">abhaayk30@gmail.com</a>
+                </div>
+                <button type="button" class="copy-email-btn" id="copy-email-btn" title="Copy email address" aria-label="Copy email address to clipboard">
+                  <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+                    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+                  </svg>
+                  <span class="copy-text">Copy</span>
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-detail-card">
+                <div class="detail-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="detail-content">
+                  <span class="detail-label">Location</span>
+                  <span class="detail-value">Alwar, Rajasthan, India</span>
+                  <span class="detail-sub">Open to Remote, Hybrid, &amp; Relocation</span>
+                </div>
+              </div>
+
+              <!-- Availability Card -->
+              <div class="contact-detail-card">
+                <div class="detail-icon-box status-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <div class="detail-content">
+                  <span class="detail-label">Status</span>
+                  <span class="detail-value status-available-tag">
+                    <span class="inline-pulse-dot"></span> Available for Hiring
+                  </span>
+                  <span class="detail-sub">Typical reply within 24 hours</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Group -->
+            <div class="contact-socials-wrapper">
+              <h4 class="socials-heading">Professional Profiles</h4>
+              <div class="socials-buttons-grid">
+                <!-- LinkedIn Link -->
+                <a href="https://www.linkedin.com/in/abhaykhandelwal" target="_blank" rel="noopener noreferrer" class="social-card-btn linkedin-btn" aria-label="Abhay's LinkedIn Profile (opens in new tab)">
+                  <div class="social-btn-inner">
+                    <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                    </svg>
+                    <div class="social-btn-text">
+                      <span class="social-title">LinkedIn</span>
+                      <span class="social-handle">linkedin.com/in/abhaykhandelwal</span>
+                    </div>
+                  </div>
+                  <svg class="external-arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 17L17 7M7 7h10v10"/>
+                  </svg>
+                </a>
+
+                <!-- GitHub Link -->
+                <a href="https://github.com/abhaykhandelwal" target="_blank" rel="noopener noreferrer" class="social-card-btn github-btn" aria-label="Abhay's GitHub Profile (opens in new tab)">
+                  <div class="social-btn-inner">
+                    <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                    </svg>
+                    <div class="social-btn-text">
+                      <span class="social-title">GitHub</span>
+                      <span class="social-handle">github.com/abhaykhandelwal</span>
+                    </div>
+                  </div>
+                  <svg class="external-arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 17L17 7M7 7h10v10"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-col reveal-card" style="--card-delay: 0.2s;">
+            <div class="contact-form-card">
+              <div class="form-header">
+                <div class="form-header-badge">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m22 2-7 20-4-9-9-4Z"/>
+                    <path d="M22 2 11 13"/>
+                  </svg>
+                  <span>Direct Message</span>
+                </div>
+                <h3 class="form-title">Send a Message</h3>
+                <p class="form-subtitle">Fill out the details below. Messages go straight to my inbox.</p>
+              </div>
+
+              <!-- Form Status Banner (Shown on success or error) -->
+              <div id="form-status-alert" class="form-status-alert" role="status" aria-live="polite" style="display: none;">
+                <div class="status-alert-icon" id="status-icon" aria-hidden="true"></div>
+                <div class="status-alert-content">
+                  <div class="status-alert-title" id="status-title">Message Sent!</div>
+                  <div class="status-alert-desc" id="status-desc">Thank you for reaching out. I'll get back to you shortly.</div>
+                </div>
+                <button type="button" class="status-alert-close" id="status-alert-close" aria-label="Close notification">&times;</button>
+              </div>
+
+              <!-- Form Element (configured for Formspree endpoint or mailto fallback) -->
+              <form id="contact-form" class="contact-form" action="https://formspree.io/f/your-formspree-id" method="POST" novalidate>
+                <!-- Name Field -->
+                <div class="form-group" id="group-name">
+                  <label for="contact-name" class="form-label">
+                    Your Name <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <svg class="field-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                      <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                    <input type="text" id="contact-name" name="name" class="form-control" placeholder="e.g. Rahul Sharma" autocomplete="name" required>
+                  </div>
+                  <span class="field-error-msg" id="name-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group" id="group-email">
+                  <label for="contact-email" class="form-label">
+                    Email Address <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <svg class="field-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect width="20" height="16" x="2" y="4" rx="2"/>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                    <input type="email" id="contact-email" name="email" class="form-control" placeholder="e.g. rahul@company.com" autocomplete="email" required>
+                  </div>
+                  <span class="field-error-msg" id="email-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Subject Field -->
+                <div class="form-group" id="group-subject">
+                  <label for="contact-subject" class="form-label">
+                    Subject <span class="optional-mark">(Optional)</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <svg class="field-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10"/>
+                      <line x1="12" x2="12" y1="8" y2="12"/>
+                      <line x1="12" x2="12.01" y1="16" y2="16"/>
+                    </svg>
+                    <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="e.g. QA Engineer Hiring / Project Testing">
+                  </div>
+                  <span class="field-error-msg" id="subject-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group" id="group-message">
+                  <label for="contact-message" class="form-label">
+                    Message <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <div class="textarea-wrapper">
+                    <textarea id="contact-message" name="message" class="form-control form-textarea" rows="5" placeholder="Hi Abhay, we reviewed your QA experience in POS and mobile apps, and we'd like to talk about..." required></textarea>
+                  </div>
+                  <span class="field-error-msg" id="message-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Submit Button & Action Note -->
+                <div class="form-submit-row">
+                  <button type="submit" id="contact-submit-btn" class="btn btn-primary btn-submit-message">
+                    <span class="submit-spinner" aria-hidden="true"></span>
+                    <span class="submit-btn-label">Send Message</span>
+                    <svg class="submit-btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <line x1="22" x2="11" y1="2" y2="13"/>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                    </svg>
+                  </button>
+                  <span class="form-privacy-note">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                    </svg>
+                    Direct inbox delivery &bull; No spam
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Semantic Rich Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-top-row">
+        <!-- Footer Col 1: Brand & Tagline -->
+        <div class="footer-brand-col">
+          <a href="#home" class="footer-brand-logo" aria-label="Abhay Khandelwal Portfolio Homepage">
+            <span class="brand-code">&lt;</span>Abhay<span class="brand-accent">.QA</span><span class="brand-code">/&gt;</span>
+          </a>
+          <p class="footer-bio">
+            QA Engineer with 3+ years of expertise delivering high-impact functional, regression, API, and cross-platform mobile/web quality assurance.
+          </p>
+          <div class="footer-contact-mini">
+            <a href="mailto:abhaayk30@gmail.com" class="footer-mini-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              <span>abhaayk30@gmail.com</span>
+            </a>
+            <span class="footer-mini-loc">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>Alwar, Rajasthan, India</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Footer Col 2: Navigation Links -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#skills" class="footer-link">Skills</a></li>
+            <li><a href="#experience" class="footer-link">Experience</a></li>
+            <li><a href="#projects" class="footer-link">Projects</a></li>
+            <li><a href="#qa-work" class="footer-link">QA Work</a></li>
+            <li><a href="#education" class="footer-link">Education</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Col 3: Social & Resume Links -->
+        <div class="footer-social-col">
+          <h4 class="footer-col-title">Connect</h4>
+          <div class="footer-social-links">
+            <a href="https://www.linkedin.com/in/abhaykhandelwal" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/abhaykhandelwal" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="GitHub Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="resume.pdf" download="Abhay_Khandelwal_QA_Resume.pdf" class="footer-social-btn resume-btn" aria-label="Download Resume PDF">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" x2="12" y1="15" y2="3"/>
+              </svg>
+              <span>Resume PDF</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-row">
+        <p class="footer-copy">&copy; <span id="current-year"></span> Abhay Khandelwal. All rights reserved.</p>
+        <span class="footer-tagline-small">Quality Assurance &bull; Delivering Zero-Defect Experiences</span>
+        <a href="#home" id="back-to-top-btn" class="back-to-top" aria-label="Back to top of page">
+          <span>Back to Top</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m18 15-6-6-6 6"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
