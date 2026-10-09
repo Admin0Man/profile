@@ -1,12 +1,12 @@
 /**
  * QA Portfolio - Foundation JavaScript
- * Plain vanilla JS for theme toggling, responsive navigation, and scrollspy.
+ * Plain vanilla JS for responsive navigation, interactions, and scrollspy.
  */
 
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
-  initThemeToggle();
+  initThemeLock();
   initMobileNav();
   initScrollSpy();
   initCurrentYear();
@@ -20,55 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==========================================================================
-   1. Dark / Light Mode System with LocalStorage & OS Preference
+   1. Theme Enforcement (Fixed Dark Mode)
    ========================================================================== */
-function initThemeToggle() {
-  const themeToggleBtn = document.getElementById('theme-toggle');
-  const STORAGE_KEY = 'portfolio-theme';
-  const colorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
-
-  // Helper to determine the effective theme
-  const getPreferredTheme = () => {
-    const storedTheme = localStorage.getItem(STORAGE_KEY);
-    if (storedTheme === 'dark' || storedTheme === 'light') {
-      return storedTheme;
-    }
-    return colorSchemeQuery.matches ? 'dark' : 'light';
-  };
-
-  // Helper to apply theme to document
-  const applyTheme = (theme) => {
-    document.documentElement.setAttribute('data-theme', theme);
-    if (themeToggleBtn) {
-      themeToggleBtn.setAttribute(
-        'aria-label',
-        theme === 'dark' ? 'Switch to Light mode' : 'Switch to Dark mode'
-      );
-    }
-  };
-
-  // Set initial state
-  const currentTheme = getPreferredTheme();
-  applyTheme(currentTheme);
-
-  // Toggle button click handler
-  if (themeToggleBtn) {
-    themeToggleBtn.addEventListener('click', () => {
-      const activeTheme = document.documentElement.getAttribute('data-theme') || 'light';
-      const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
-
-      applyTheme(newTheme);
-      localStorage.setItem(STORAGE_KEY, newTheme);
-    });
-  }
-
-  // Sync if OS system preference changes (only if user hasn't manually overridden it)
-  colorSchemeQuery.addEventListener('change', (e) => {
-    const hasManualChoice = localStorage.getItem(STORAGE_KEY);
-    if (!hasManualChoice) {
-      applyTheme(e.matches ? 'dark' : 'light');
-    }
-  });
+function initThemeLock() {
+  document.documentElement.setAttribute('data-theme', 'dark');
+  try {
+    localStorage.setItem('portfolio-theme', 'dark');
+  } catch (e) {}
 }
 
 /* ==========================================================================

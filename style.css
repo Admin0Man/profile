@@ -4,46 +4,9 @@
    ========================================================================== */
 
 :root,
-[data-theme="light"] {
-  /* Color Palette - Light Mode */
-  --bg-primary: #ffffff;
-  --bg-secondary: #f8fafc;
-  --bg-card: #ffffff;
-  --text-primary: #0f172a;
-  --text-secondary: #334155;
-  --text-muted: #64748b;
-  --border-color: #e2e8f0;
-  --border-subtle: #f1f5f9;
-
-  /* Accent Color (Clean Professional Teal) */
-  --accent: #0891b2;
-  --accent-hover: #0e7490;
-  --accent-subtle: rgba(8, 145, 178, 0.08);
-  --accent-border: rgba(8, 145, 178, 0.25);
-  --accent-contrast: #ffffff;
-
-  /* Header & UI */
-  --header-bg: rgba(255, 255, 255, 0.85);
-  --header-border: rgba(226, 232, 240, 0.8);
-  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
-  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
-  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.03);
-
-  /* Layout & Sizing */
-  --header-height: 70px;
-  --container-max-width: 1160px;
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
-  --radius-full: 9999px;
-
-  /* Transitions */
-  --transition-fast: 0.15s ease;
-  --transition-normal: 0.25s ease;
-  --transition-smooth: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
 [data-theme="dark"] {
+  color-scheme: dark;
+
   /* Color Palette - Dark Mode */
   --bg-primary: #0a0e17;
   --bg-secondary: #111827;
@@ -67,6 +30,19 @@
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.5);
+
+  /* Layout & Sizing */
+  --header-height: 70px;
+  --container-max-width: 1160px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-smooth: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* ==========================================================================
@@ -246,24 +222,9 @@ button {
   gap: 12px;
 }
 
-/* Theme Toggle Button */
+/* Theme Toggle Button (Hidden in fixed dark mode) */
 .theme-toggle-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: var(--radius-md);
-  color: var(--text-secondary);
-  border: 1px solid var(--border-color);
-  background-color: var(--bg-card);
-  transition: all var(--transition-fast);
-}
-
-.theme-toggle-btn:hover {
-  color: var(--accent);
-  border-color: var(--accent-border);
-  background-color: var(--accent-subtle);
+  display: none !important;
 }
 
 /* Theme Icons Toggle state */
@@ -2628,6 +2589,14 @@ main {
   letter-spacing: -0.02em;
 }
 
+.contact-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
 .avatar-status-dot {
   position: absolute;
   bottom: 0;
@@ -2699,14 +2668,9 @@ main {
 }
 
 .status-icon-box {
-  color: #16a34a;
-  background-color: rgba(34, 197, 94, 0.12);
-  border-color: rgba(34, 197, 94, 0.3);
-}
-
-[data-theme="dark"] .status-icon-box {
   color: #4ade80;
   background-color: rgba(34, 197, 94, 0.18);
+  border-color: rgba(34, 197, 94, 0.3);
 }
 
 .detail-content {
@@ -2754,12 +2718,8 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #16a34a;
-  font-weight: 600;
-}
-
-[data-theme="dark"] .status-available-tag {
   color: #4ade80;
+  font-weight: 600;
 }
 
 .inline-pulse-dot {
@@ -2798,10 +2758,6 @@ main {
 .copy-email-btn.copied {
   background-color: rgba(34, 197, 94, 0.15);
   border-color: #22c55e;
-  color: #16a34a;
-}
-
-[data-theme="dark"] .copy-email-btn.copied {
   color: #4ade80;
 }
 
@@ -2950,25 +2906,13 @@ main {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  background-color: rgba(34, 197, 94, 0.12);
-  border: 1px solid rgba(34, 197, 94, 0.35);
-  color: #15803d;
+  background-color: rgba(34, 197, 94, 0.16);
+  border: 1px solid rgba(74, 222, 128, 0.4);
+  color: #86efac;
   animation: fadeInUp 0.3s ease;
 }
 
-[data-theme="dark"] .form-status-alert {
-  background-color: rgba(34, 197, 94, 0.16);
-  border-color: rgba(74, 222, 128, 0.4);
-  color: #86efac;
-}
-
 .form-status-alert.is-error {
-  background-color: rgba(239, 68, 68, 0.12);
-  border-color: rgba(239, 68, 68, 0.35);
-  color: #b91c1c;
-}
-
-[data-theme="dark"] .form-status-alert.is-error {
   background-color: rgba(239, 68, 68, 0.18);
   border-color: rgba(248, 113, 113, 0.4);
   color: #fca5a5;

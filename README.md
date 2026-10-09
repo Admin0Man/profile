@@ -8,7 +8,7 @@ Professional portfolio website showcasing Quality Assurance experience in POS sy
 
 ## 🛠️ Built With
 - Semantic HTML5 with complete SEO & OpenGraph meta tags
-- Responsive CSS3 design (Custom styling, modern CSS variables, light & dark theme support)
+- Responsive CSS3 design (Custom styling, modern CSS variables, sleek dark theme)
 - Vanilla JavaScript for smooth interactions, project filters, and modals
 
 ## 💻 Local Development
